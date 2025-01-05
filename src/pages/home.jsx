@@ -1,6 +1,12 @@
 import { Header } from "../components/header"
+import { Sidebar } from "../components/sidebar"
 export const Home = () => {
     return(
-        <div className="w-screen"> <Header /> </div>
+        <div>
+            <div><Header /></div>
+            <div className="flex">
+                <Sidebar />
+            </div>
+        </div>
     )
 }

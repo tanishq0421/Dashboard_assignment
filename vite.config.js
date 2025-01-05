@@ -10,4 +10,5 @@ export default defineConfig({
       plugins: [tailwindcss(), autoprefixer()],
     },
   },
+  assetsInclude: ['**/*.jpg'], // Include .jpg files for processing
 });
