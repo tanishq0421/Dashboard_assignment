@@ -3,6 +3,7 @@ import { Header } from "../components/header";
 import { Sidebar } from "../components/sidebar";
 import { Tabs } from "../components/tabs";
 import { Title } from "../components/title";
+import { Activity } from "../components/activity"
 
 export const Home = () => {
   return (
@@ -15,8 +16,9 @@ export const Home = () => {
         <div className="w-full flex flex-col">
           <Title />
           <Tabs />
-          <div className="flex border-r-2 flex-grow">
+          <div className="flex flex-grow">
             <Details />
+            <Activity />
           </div>
         </div>
       </div>

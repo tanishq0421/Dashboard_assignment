@@ -73,8 +73,8 @@ export const Details = () => {
             </div>
           );
         })}
-          </div>
-          <div>
+      </div>
+      <div>
         <div className="flex justify-between px-6 py-4">
           <div>
             <div className="text-gray-500 font-semibold mb-2">Account</div>
@@ -95,20 +95,22 @@ export const Details = () => {
             </select>
           </div>
         </div>
-          </div>
-          <div>
+      </div>
+      <div>
         {persons.map((person, index) => {
-            return(
-                <div className="px-6" key={index}>
-                    <div className="flex my-6 justify-between">
-                        <div>
-                            <div className="text-blue-500 text-md">{person.name}</div>
-                            <div className="text-gray-400">{person.designation}</div>
-                        </div>
-                    <div className="text-black-300 font-bold">{person.vertical}</div>
-                    </div>
+          return (
+            <div className="px-6" key={index}>
+              <div className="flex my-6 justify-between">
+                <div>
+                  <div className="text-blue-500 text-md">{person.name}</div>
+                  <div className="text-gray-400">{person.designation}</div>
                 </div>
-            )
+                <div className="text-black-300 font-bold">
+                  {person.vertical}
+                </div>
+              </div>
+            </div>
+          );
         })}
       </div>
     </div>
