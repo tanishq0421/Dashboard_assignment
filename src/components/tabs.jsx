@@ -5,7 +5,7 @@ export const Tabs = () => {
     const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
     return(
-        <div className="flex w-full justify-between px-6 py-2 border-b-2">
+        <div className="flex w-full px-6 py-2 border-b-2">
             <div className="flex w-full justify-between">
                 <div className="flex space-x-6">
                     {tabs.map((tab, index) => {

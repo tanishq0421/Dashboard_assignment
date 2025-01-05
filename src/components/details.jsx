@@ -25,7 +25,7 @@ export const Details = () => {
 
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
   return (
-    <div className="w-2/5 h-full border-r-2">
+    <div className="w-full h-full border-r-2">
       <div className="flex px-6 pt-2 pb-4 justify-between border-b-2">
         <div className="flex flex-col space-y-4">
           <div className="flex items-center mt-4">

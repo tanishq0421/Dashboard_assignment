@@ -23,7 +23,7 @@ export const Activity = () => {
         },
     ];
     return (
-        <div className="w-full md:w-2/5 border-r-2 h-3/5 border-b-2">
+        <div className="w-full border-r-2 h-full border-b-2">
             <div className="flex flex-wrap md:flex-nowrap space-x-4 border-b-2 justify-start">
                 {tabs.map((tab, index) => {
                     const isSelected = selectedTab === tab;
@@ -101,7 +101,7 @@ export const Activity = () => {
                 <div className="text-black-500 text-md font-semibold mb-2">Description</div>
                 <input type="text" placeholder="Input Text" className="text-gray-400 border-gray border-2 rounded-md w-full h-20"/>
             </div>
-            <div className="flex flex-grow items-center justify-between mx-6 my-2">
+            <div className="flex flex-grow items-center justify-between mx-6 my-4">
                 <div className="flex flex-grow items-center space-x-2">
                     <img src={plusIcon} alt="plusIcon" className="h-6 w-6"/>
                     <div className="text-gray-400 text-md">Add Team Member</div>
